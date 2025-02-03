@@ -1,4 +1,4 @@
-import {Component, inject, signal, Signal} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {AsyncPipe, DatePipe} from "@angular/common";
 import {MatCell, MatCellDef, MatColumnDef, MatHeaderCell, MatHeaderCellDef, MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef, MatTable} from "@angular/material/table";
 import {TimeApiService} from '../services/time-api.service';
