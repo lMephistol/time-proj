@@ -61,7 +61,7 @@ export class TimeTableComponent {
         zones: this.zones(),
       },
       width: '20vw',
-      minWidth: '150px',
+      minWidth: '350px',
       maxWidth: '80vw'
     };
 
