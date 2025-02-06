@@ -1,18 +1,15 @@
 <h2 mat-dialog-title>Select zone for table</h2>
 <mat-dialog-content>
   <p>Select timezone from the list?</p>
-  @if (timeZones$ | async; as timeZones) {
     <mat-form-field>
       <mat-label>Time zone</mat-label>
       <mat-select [(ngModel)]="zoneName">
-        @for (zone of timeZones | filter:usedZones; track zone) {
+        @for (zone of allZones | filter:usedZones; track zone) {
           <mat-option [value]="zone">{{ zone }}</mat-option>
         }
       </mat-select>
     </mat-form-field>
-  } @else {
-    <mat-spinner class="main-loading-spinner"></mat-spinner>
-  }
+
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button (click)="onNoClick()">Cancel</button>

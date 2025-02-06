@@ -15,6 +15,4 @@ export class FilterPipe implements PipeTransform {
     }
     return items.filter(item => term.indexOf(item) === -1);
   }
-
-
 }

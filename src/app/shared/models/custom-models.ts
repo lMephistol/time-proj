@@ -1,7 +1,7 @@
 export type CustomTimeZone = {
   name: string;
   abbreviation: string;
-  timeOffset: number;
+  utcOffset: string;
   localDate: string;
   dayLightSavingFlag: boolean;
   daylightStartDate?: string;
